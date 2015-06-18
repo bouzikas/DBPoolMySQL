@@ -1,8 +1,31 @@
-DBPoolMySQL
-===========
+# DBPoolMySQL
 
 DBPool mechanism using MySQL connector written in C.
+An example project using [GwLib] of Kannel SMS Gateway project to create DBPool connections with MySQL.
 
-The files dbpool_mysql.c/h & thread.c/h are single copies through open source Kannel SMS Gateway project, but modified in such way to work independently.
+### Init project
+
+```sh
+$ git clone https://github.com/dimimpou/DBPoolMySQL.git ./DBPoolMySQL
+$ cd DBPoolMySQL
+$ git submodule update --init
+```
 
 
+### Build [GwLib]
+
+```sh
+$ cd gwlib
+$ ./configure --with-mysql
+$ make
+```
+
+### Build project
+
+```sh
+$ cd ..
+$ ./configure
+$ make
+```
+
+[GwLib]:https://github.com/dimimpou/gwlib.git
