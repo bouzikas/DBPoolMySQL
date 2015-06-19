@@ -24,7 +24,6 @@ $ make
 
 ```sh
 $ cd ..
-$ ./configure
 $ make
 ```
 

@@ -1,4 +1,4 @@
 .DS_Store
 DBPoolMySQL.xcodeproj
-.o
-.a
+*.o*
+*.a*
